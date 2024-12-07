@@ -1,4 +1,4 @@
-package com.fstg.gymspringproject.Entity;
+package com.fstg.gymspringproject.models;
 
 
 

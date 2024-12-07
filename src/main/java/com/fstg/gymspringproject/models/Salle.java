@@ -1,4 +1,4 @@
-package com.fstg.gymspringproject.Entity;
+package com.fstg.gymspringproject.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -16,9 +16,9 @@ public class Salle {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_salle;
+    private Long id;
 
-    private String nom_salle;
+    private String name;
     private int capacite;
 
     @ManyToOne
@@ -31,20 +31,20 @@ public class Salle {
     // Getters et Setters
 
 
-    public Long getId_salle() {
-        return id_salle;
+    public Long getId() {
+        return id;
     }
 
-    public void setId_salle(Long id_salle) {
-        this.id_salle = id_salle;
+    public void setId(Long id_salle) {
+        this.id = id;
     }
 
     public String getNom_salle() {
-        return nom_salle;
+        return name;
     }
 
     public void setNom_salle(String nom_salle) {
-        this.nom_salle = nom_salle;
+        this.name = name;
     }
 
     public int getCapacite() {

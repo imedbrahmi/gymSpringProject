@@ -1,12 +1,10 @@
-package com.fstg.gymspringproject.Entity;
+package com.fstg.gymspringproject.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.apache.catalina.User;
 
-import java.time.LocalTime;
 import java.util.List;
 
 @Entity
@@ -19,9 +17,9 @@ public class Club {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_club;
+    private Long id;
 
-    private String nom_club;
+    private String nomclub;
     private String adresse;
     private String numero_tel;
 
@@ -37,20 +35,20 @@ public class Club {
     // Getters et Setters
 
 
-    public Long getId_club() {
-        return id_club;
+    public Long getId() {
+        return id;
     }
 
-    public void setId_club(Long id_club) {
-        this.id_club = id_club;
+    public void setId(Long id_club) {
+        this.id = id;
     }
 
-    public String getNom_club() {
-        return nom_club;
+    public String getNomclub() {
+        return nomclub;
     }
 
-    public void setNom_club(String nom_club) {
-        this.nom_club = nom_club;
+    public void setNomclub(String nom_club) {
+        this.nomclub = nomclub;
     }
 
     public String getAdresse() {
